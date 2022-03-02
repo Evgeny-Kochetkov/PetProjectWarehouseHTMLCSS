@@ -83,9 +83,9 @@ body{
 .info{
     max-width: 1600px;
     margin: 0px auto;
-}
-.info .container{
     margin-top: 150px;
+}
+.info_container{
     display: flex;
     justify-content: center;
 }
@@ -110,10 +110,107 @@ body{
 .info_header{
     font-weight: 700;
     font-size: 40px;
+    line-height: 130%;
     color: #212353;
 }
 .info_header_descr{
     font-weight: 400;
     font-size: 18px;
+    line-height: 160%;
     color: #4B5D68;
+}
+.features{
+    max-width: 1600px;
+    margin: 0px auto;
+    margin-top: 150px;
+}
+.features_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.features_header{
+    font-weight: normal;
+    font-size: 40px;
+    color: #212353;
+}
+.features_header_descr{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    max-width: 584px;
+    text-align: center;
+}
+.features_box{
+    display: grid;
+    grid-template: 358px 358px / 544px 544px;
+    gap: 50px 32px;
+    margin-top: 100px;
+    width: 1120px;
+    height: 766px;
+}
+.case{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.case img{
+    position: absolute;
+}
+.case_bg_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 172px;
+    padding-right: 49px;
+    margin-left: 90px;
+    height: 358px;
+    width: 441px;
+}
+.case_bg_img_1{
+    background: url('../img/case_1.png') center center/cover no-repeat;
+}
+.case_bg_img_2{
+    background: url('../img/case_2.png') center center/cover no-repeat;
+}
+.case_bg_img_3{
+    background: url('../img/case_3.png') center center/cover no-repeat;
+}
+.case_bg_img_4{
+    background: url('../img/case_4.png') center center/cover no-repeat;
+}
+.case_header{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #212353;
+}
+.case_descr{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+.case_click{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: transparent;
+    width: 127px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #212353;
+    cursor: pointer;
+}
+.case_click img{
+    position: absolute;
+    right: 0px;
 }
