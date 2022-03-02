@@ -7,7 +7,7 @@ body{
 .concept{
     max-width: 1600px;
     margin: 0px auto;
-    padding: 40px 0px 45px 0px;
+    padding: 60px 0px 45px 0px;
 }
 .concept_container{
     position: relative;
@@ -79,4 +79,41 @@ body{
     bottom: -90px;
     right: 0;
     position: absolute;
+}
+.info{
+    max-width: 1600px;
+    margin: 0px auto;
+}
+.info .container{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    min-width: 1120px;
+    max-height: 560px;
+    padding: 32px 16px;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+}
+.info_header_box{
+    display: flex;
+    min-height: 310px;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 65px;
+    max-width: 475px;
+}
+.info_header{
+    font-weight: 700;
+    font-size: 40px;
+    color: #212353;
+}
+.info_header_descr{
+    font-weight: 400;
+    font-size: 18px;
+    color: #4B5D68;
 }
