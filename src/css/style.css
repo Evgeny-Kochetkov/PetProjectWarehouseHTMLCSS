@@ -57,36 +57,27 @@ body{
     font-size: 21px;
     transition: 0.2s all;
 }
-.container-header{
-    padding-right: 470px;
+.case-concept{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
-.container-header__header{
+.case-concept__header{
+    max-width: 650px;
     margin: 140px 0px 0px 0px;
     font-weight: 700;
     font-size: 80px;
     line-height: 110%;
     color: #212353;
 }
-.container-descr{
-    padding-right: 740px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-.container-descr__descr{
+.case-concept__descr{
+    max-width: 380px;
     margin-top: 50px;
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;
     color: #4B5D68;
-}
-.container-btn{
-    padding-right: 950px;
 }
 .button{
     margin-top: 66px;
@@ -149,12 +140,12 @@ body{
     color: #212353;
 }
 .features-descr{
+    max-width: 590px;
     margin-top: 50px;
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
     color: #4B5D68;
-    padding: 0 265px 0 265px;
     text-align: center;
 }
 .features-box{
@@ -167,8 +158,10 @@ body{
     position: relative;
     display: flex;
     align-items: center;
+    padding-left: 100px;
 }
 .case img{
+    left: 0;
     position: absolute;
 }
 .case_img{
@@ -176,10 +169,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding-left: 172px;
-    padding-right: 49px;
-    margin-left: 90px;
-    height: 358px;
-    width: 441px;
+    height: 100%;
+    width: 100%;
 }
 .case_img__1{
     background: url('../img/case_1.png') center center/cover no-repeat;
@@ -201,6 +192,7 @@ body{
     color: #212353;
 }
 .case-descr{
+    width: 80%;
     margin-top: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -208,22 +200,19 @@ body{
     color: #4B5D68;
 }
 .case-click{
-    margin: 20px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    background: transparent;
-    width: 127px;
-    height: 26px;
-    font-weight: 400;
-    font-size: 18px;
-    color: #212353;
+    justify-content: start;
+    margin-bottom: 20px;
     cursor: pointer;
 }
-.case-click img{
-    position: absolute;
-    right: 0px;
+.case-click div{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #212353;  
+}
+.arrow-case{
+
 }
 .container_testimonials{
     display: flex;
@@ -404,6 +393,17 @@ body{
     left:0;
     display: block;
 }
+.arrow-case div{
+    width: 20px;
+    background-color: #9C69E2;
+    transform: rotate(180deg);
+}
+.arrow-case div::after{
+    background-color: #9C69E2;
+}
+.arrow-case div::before{
+    background-color: #9C69E2;
+}
 .strip{
     margin-top: 150px;
     width:100%;
@@ -491,3 +491,16 @@ body{
     background: #000000;
     transition: 0.2s all;
 }
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+
+}
+@media (max-width: 575px){
+
+}
+
