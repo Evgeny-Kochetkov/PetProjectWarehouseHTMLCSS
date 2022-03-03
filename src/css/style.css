@@ -36,16 +36,27 @@ body{
 .menu{
     padding: 0;
     margin-left: 121px;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    width: 250px;
+    display: grid;
+    grid-template: 35px / 70px 70px 70px;
+    gap: 0px 20px;
+    align-items: center;
+    align-self: center;
 }
-.menu_link{
+.menu__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration-line: none;
+    color: #4B5D68;
+    transition: 0.2s all;
+}
+.menu__link:hover{
     color: #212353;
-    margin-left: 40px;
+    font-size: 22px;
+    transition: 0.2s all;
 }
 .header_container{
     max-width: 645px;
