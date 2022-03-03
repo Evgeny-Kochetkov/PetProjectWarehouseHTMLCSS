@@ -4,10 +4,14 @@ html{
 body{
     margin: 0;
 }
-.concept{
+.section{
     max-width: 1600px;
     margin: 0px auto;
+    margin-top: 150px;
+}
+.section_concept{
     padding: 60px 0px 45px 0px;
+    margin-top: 0;
 }
 .concept_container{
     position: relative;
@@ -80,11 +84,6 @@ body{
     right: 0;
     position: absolute;
 }
-.info{
-    max-width: 1600px;
-    margin: 0px auto;
-    margin-top: 150px;
-}
 .info_container{
     display: flex;
     justify-content: center;
@@ -119,11 +118,6 @@ body{
     font-size: 18px;
     line-height: 160%;
     color: #4B5D68;
-}
-.features{
-    max-width: 1600px;
-    margin: 0px auto;
-    margin-top: 150px;
 }
 .features_container{
     display: flex;
@@ -214,11 +208,6 @@ body{
 .case_click img{
     position: absolute;
     right: 0px;
-}
-.testimonials{
-    max-width: 1600px;
-    margin: 0px auto;
-    margin-top: 150px;
 }
 .testimonials_container{
     display: flex;
@@ -406,10 +395,6 @@ body{
     height: 2px;
     background: #9C69E2;
     opacity: 0.2;
-}
-.footer{
-    max-width: 1600px;
-    margin: 0px auto;
 }
 .footer_container{
     padding: 0 240px;
