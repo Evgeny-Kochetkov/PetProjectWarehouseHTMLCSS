@@ -54,7 +54,7 @@ body{
 }
 .menu__link:hover{
     color: #212353;
-    font-size: 22px;
+    font-size: 21px;
     transition: 0.2s all;
 }
 .container-header{
@@ -85,6 +85,9 @@ body{
     line-height: 160%;
     color: #4B5D68;
 }
+.container-btn{
+    padding-right: 950px;
+}
 .button{
     margin-top: 66px;
     min-width: 170px;
@@ -96,6 +99,12 @@ body{
     font-size: 18px;
     color: #FFFFFF;
     cursor: pointer;
+    transition: 0.2s all;
+}
+.button:hover{
+    background: #8f5ed4;
+    box-shadow: 0px 5px 5px rgba(156, 105, 226, 0.5);
+    transition: 0.2s all;
 }
 
 .container_info{
@@ -136,7 +145,7 @@ body{
     align-items: center;    
 }
 .features-header{
-    font-weight: normal;
+    font-weight: 500;
     font-size: 40px;
     color: #212353;
 }
@@ -298,7 +307,7 @@ body{
 }
 .user-comment{
     margin-top: 20px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 180%;
     color: #4B5D68;
@@ -475,7 +484,11 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background: #212353;
+    background: #4e4e4e;
     opacity: 0.1;
     cursor: pointer;
+}
+.social-round:hover{
+    background: #000000;
+    transition: 0.2s all;
 }
