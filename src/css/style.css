@@ -477,4 +477,5 @@ body{
     border-radius: 50px;
     background: #212353;
     opacity: 0.1;
+    cursor: pointer;
 }
