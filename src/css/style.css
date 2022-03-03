@@ -88,14 +88,15 @@ body{
 .info_container{
     display: flex;
     justify-content: center;
+    padding: 0 240px;
 }
-.box{
+.info_box{
     display: flex;
     justify-content:start;
     align-items:center;
-    min-width: 1120px;
-    max-height: 560px;
-    padding: 32px 16px;
+    width: 1120px;
+    min-height: 560px;
+    padding: 0px 16px;
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
 }
@@ -213,4 +214,189 @@ body{
 .case_click img{
     position: absolute;
     right: 0px;
+}
+.testimonials{
+    max-width: 1600px;
+    margin: 0px auto;
+    margin-top: 150px;
+}
+.testimonials_container{
+    display: flex;
+    justify-content: center;
+    overflow:  hidden;
+    padding: 0 240px;
+}
+.testimonials_box{
+    position: relative;
+    width: 1120px;
+    min-height: 700px;
+    padding-left: 100px;
+    padding-right: 70px;
+    border-radius: 50px;
+    background: #9C69E2;
+}
+.testimonials_header{
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.card_container{
+    position: absolute;
+    display: grid;
+    grid-template: 330px / 645px 400px 400px;
+    gap: 0px 20px;
+    left: 100px;
+    margin-top: 90px;
+}
+.card{
+    position: relative;
+    padding-left: 40px;
+    box-shadow: 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background:#FFFFFF; /* 
+    display: none; */
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index:2;
+    border-radius: 20px;    
+    background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%);
+}
+.card_active{
+    display: initial;
+    margin-left: 0;
+    padding: 0 70px;
+    background:#FFFFFF;
+    box-shadow: 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.card_active::before{
+    display: none;
+}
+.card_box{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 60px;
+}
+.card_descr{
+    margin-top: 20px;
+    padding-left:30px;
+}
+.user_name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #212353;
+}
+.user_job{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #9C69E2;
+}
+.user_comment{
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #4B5D68;
+}
+.slider_dots{
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin-top: 480px;
+    height: 15px;
+}
+.dot_box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.dot{
+    cursor: pointer;
+    margin-left: 10px;
+    width: 5px;
+    height: 5px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.dot_active{
+    margin-left: 0;
+    width: 10px;
+    height: 10px;
+    background: #F063B8;
+    border-radius: 10px;
+}
+.arrow_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 20px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+.arrow div {
+    position: relative;
+    top: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    left:0;
+    display: block;
+}
+.arrow div::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: -1px;
+    left: 2px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+.arrow div::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: -7px;
+    left: 2px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+.arrow_active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    transform: rotate(180deg);
+}
+.arrow_active div {
+    position: relative;
+    top: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    left:0;
+    display: block;
 }
