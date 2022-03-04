@@ -36,7 +36,7 @@ body{
 .menu{
     padding-left: 9%;
     display: grid;
-    grid-template: 35px / 100px 100px 100px;
+    grid-template: 1fr / 1fr 1fr 1fr;
     gap: 0px 20px;
     align-items: center;
     justify-items: center;
@@ -113,11 +113,14 @@ body{
 .info-img{
     width: 50%;
 }
+.info-img-hidden{
+    display: none;
+}
 .case-info{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 0 6.5% 0 6.5%;
+    padding: 0 6.5%;
 }
 .case-info__header{
     font-weight: 700;
@@ -197,7 +200,6 @@ body{
 }
 .case-descr{
     width: 80%;
-    margin-top: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -228,7 +230,7 @@ body{
     background: #9C69E2;
 }
 .testimonials-header{
-    margin-top: 10.54%;
+    margin-top: 10%;
     font-weight: 500;
     font-size: 40px;
     color: #FFFFFF;
@@ -239,7 +241,7 @@ body{
     grid-template: 100% / 60% 42% 42%;
     gap: 0px 20px;
     left: 9%;
-    top: 32%;
+    top: 30%;
 }
 .card{
     position: relative;
@@ -298,7 +300,7 @@ body{
     color: #4B5D68;
 }
 .slider-dots{
-    margin-top: 50%;
+    margin-top: 478px;
     margin-bottom: 60px;
     display: flex;
 	justify-content: space-between;
@@ -405,7 +407,7 @@ body{
     background-color: #9C69E2;
 }
 .strip{
-    margin-top: 150px;
+    margin-top: 10%;
     width:100%;
     height: 2px;
     background: #9C69E2;
@@ -417,7 +419,7 @@ body{
 .footer-case{
     display: flex;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 10%;
 }
 .data-warehouse{
     display: flex;
@@ -494,90 +496,192 @@ body{
     background: #000000;
     transition: 0.2s all;
 }
-/* @media (max-width: 1424px){
-    .section{
-        margin-top: 130px;
-    }
-    .section_concept{
-        margin-top: 0;
-    }
+@media (max-width: 1599px){
     .concept-img{
-        width: 55%;
+        width: 52%;
     }
-    .case-concept__header{
-        margin-top: 110px;
-        font-size: 70px;
-    }
-    .case-concept__descr{
-        width: 40%;
-        margin-top: 30px;
-    }
-    .button{ 
-        margin-top: 50px;
-    }
-    .testimonials-box{
-        min-height: 650px;
-    }
-    .testimonials-header{
-        margin-top: 75px;
-    }
-    .card-container{
-        top: 14%;
-    }
-    .strip{
-        margin-top: 130px;
-    }
-    .footer-case{
-        margin-top: 130px;
-    }
-} */
-/* @media (max-width: 1223px){
-    .section{
-        margin-top: 110px;
-    }
-    .section_concept{
-        margin-top: 0;
-    }
+}
+@media (max-width: 1424px){
     .concept-img{
         width: 50%;
     }
     .case-concept__header{
-        margin-top: 110px;
-        font-size: 70px;
+        font-size: 75px;
+        padding-right: 30%;
+        margin-top: 10%;
     }
     .case-concept__descr{
-        width: 40%;
-        margin-top: 30px;
-    }
-    .button{ 
-        margin-top: 50px;
+        padding-right: 60%;
     }
     .info-img{
         width: 40%;
     }
-    .testimonials-box{
-        min-height: 650px;
+    .case-info__header{
+        font-size: 35px;
+    }
+    .features-header{
+        font-size: 35px;
+    }
+    .features-descr{
+        max-width: 63%;
     }
     .testimonials-header{
-        margin-top: 75px;
+        margin-top: 6%;
+        font-size: 35px;
     }
     .card-container{
-        top: 14%;
+        top: 24%;
     }
-    .strip{
-        margin-top: 110px;
+}
+@media (max-width: 1223px){
+    .case-concept__header{
+        font-size: 60px;
+        padding-right: 20%;
+        margin-top: 8%;
     }
-    .footer-case{
-        margin-top: 110px;
+    .case-concept__descr{
+        font-size: 16px;
+        margin-top: 2%;
+    }
+    .button-link{
+        margin-top: 4%;
+    }
+    .case-info__header{
+        font-size: 30px;
+    }
+    .case-info__descr{
+        font-size: 16px;
+    }
+    .features-header{
+        font-size: 30px;
+    }
+    .features-descr{
+        max-width: 73%;
+        font-size: 16px;
+    }
+    .testimonials-header{
+        font-size: 30px;
+    }
+    .card-box{
+        margin: 30px 0 9% 0;
+    }
+    .card-container{
+        top: 20%;
+    }
+    .user-comment{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .slider-dots{
+        margin-top: 400px;
+    }
+    .features-box{
+        grid-template: 358px 358px 358px 358px / 544px ;
     }
 }
 @media (max-width: 1024px){
-
+    .menu__link{
+        font-size: 18px;
+    }
+    .case-concept__header{
+        font-size: 45px;
+        margin-top: 8%;
+        padding-right: 15%;
+    }
+    .case-concept__descr{
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    .button{
+        min-width: 136px;
+        height: 48px;
+        font-size: 16px;
+    }
+    .case-info{
+        padding: 0 3.5%;
+    }
+    .case-info__header{
+        font-size: 25px;
+        margin: 0px;
+    }
+    .case-info__descr{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .features-header{
+        font-size: 25px;
+    }
+    .features-descr{
+        max-width: 83%;
+        font-size: 14px;
+    }
+    .case-header{
+        font-size: 20px;
+    }
+    .case-click div{
+        font-size: 18px;
+    }
+    .testimonials-header{
+        font-size: 25px;
+    }
+    .user-name{
+        font-size: 16px;
+    }
+    .user-comment{
+        font-size: 14px;
+    }
+}
+@media (max-width: 903px){
+    .case-concept__header{
+        font-size: 35px;
+        padding-right: 0;
+    }
 }
 @media (max-width: 767px){
+    .menu__link{
+        font-size: 16px;
+    }
+    .case-concept__header{
+        font-size: 29px;
+    }
+    .case-concept__descr{
+        font-size: 12px;
+        padding-right: 50%;
+    }
+    .button{
+        min-width: 108.8px;
+        height: 38.4px;
+        font-size: 14px;
+    }
+    .case-info__header{
+        font-size: 20px;
+    }
+    .case-info{
+        display: block;
+        padding: 0 10%;
+    }
+    .info-img{
+        display: none;
+        float: left;
+        width: 30%;
+        height: 30%;
+        margin-right: 10px;
+    }
+    .info-img-hidden{
+        display: initial;
 
+    }
+
+    .address{
+        font-size: 14px;
+    }
+    .mail{
+        font-size: 14px;
+    }
+    
 }
 @media (max-width: 575px){
 
-} */
+}
 
