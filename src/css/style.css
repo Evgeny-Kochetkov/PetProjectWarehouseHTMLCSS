@@ -7,24 +7,27 @@ body{
 .section{
     max-width: 1600px;
     margin: 0px auto;
-    margin-top: 10%;
-}
-.section_concept{
-    margin-top: 0;
 }
 .container{
+    max-width: 1600px;
     padding: 0 15%;
+    margin-top: 9%;
+}
+.container_header{
+    margin-top: 0;
 }
 .nav{
     display: flex;
     margin-top: 5.40%;
 }
-.logo{
+.logo_link{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .menu{
+    margin: 0;
+    list-style-type: none;
     padding-left: 9%;
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
@@ -35,7 +38,7 @@ body{
 .hamburger{
     display: none;
 }
-.menu__link{
+.menu_link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,12 +48,12 @@ body{
     color: #4B5D68;
     transition: 0.2s all;
 }
-.menu__link:hover{
+.menu_link:hover{
     color: #212353;
     font-size: 21px;
     transition: 0.2s all;
 }
-.concept-img{
+.case_header__img{
     position: absolute;
     right: -10%;
     bottom: -18%;
@@ -58,14 +61,14 @@ body{
     float: right;
     shape-outside: circle(50%);
 }
-.case-concept{
+.case_header{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
-.concept__header{
+.case_header__header{
     padding-right: 24%;
     margin-top: 12.5%;
     margin-bottom: 0;
@@ -74,7 +77,7 @@ body{
     line-height: 110%;
     color: #212353;
 }
-.concept__descr{
+.case_header__descr{
     padding-right: 66%;
     margin-top: 4%;
     font-weight: 500;
@@ -82,7 +85,7 @@ body{
     line-height: 160%;
     color: #4B5D68;
 }
-.button-link{
+.button_link{
     margin-top: 5%;
 }
 .button{
@@ -105,7 +108,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.box-info{
+.box_info{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,25 +116,22 @@ body{
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
 }
-.info-img{
+.info_img{
     width: 50%;
 }
-.info-img-hidden{
-    display: none;
-}
-.case-info{
+.case_info{
     display: flex;
     flex-direction: column;
     justify-content: start;
     padding: 0 6.5%;
 }
-.case-info__header{
+.case_info__header{
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
     color: #212353;
 }
-.case-info__descr{
+.case_info__descr{
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
@@ -143,12 +143,12 @@ body{
     justify-content: center;
     align-items: center;    
 }
-.features-header{
+.features_header{
     font-weight: 500;
     font-size: 40px;
     color: #212353;
 }
-.features-descr{
+.features_descr{
     max-width: 53%;
     margin-top: 4.5%;
     font-weight: 400;
@@ -163,18 +163,18 @@ body{
     gap: 50px 32px;
     margin-top: 9%;
 }
-.case{
+.case_features{
     position: relative;
     display: flex;
     align-items: center;
     padding-left: 100px;
 }
-.case img{
+.case_features_icon{
     width: 45%;
     left: 0;
     position: absolute;
 }
-.case_img{
+.case_features_img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -182,39 +182,40 @@ body{
     height: 100%;
     width: 100%;
 }
-.case_img__1{
+.case_features_img__1{
     background: url('../img/case_1.png') center center/cover no-repeat;
 }
-.case_img__2{
+.case_features_img__2{
     background: url('../img/case_2.png') center center/cover no-repeat;
 }
-.case_img__3{
+.case_features_img__3{
     background: url('../img/case_3.png') center center/cover no-repeat;
 }
-.case_img__4{
+.case_features_img__4{
     background: url('../img/case_4.png') center center/cover no-repeat;
 }
-.case-header{
+.case_header{
     margin-top: 50px;
     font-weight: 400;
     font-size: 24px;
     line-height: 130%;
     color: #212353;
 }
-.case-descr{
+.case_descr{
     width: 80%;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     color: #4B5D68;
 }
-.case-click{
+.case_link{
     display: flex;
     justify-content: start;
     margin-bottom: 20px;
+    text-decoration: none;
     cursor: pointer;
 }
-.case-click div{
+.case_link .case_link__text{
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
@@ -225,20 +226,20 @@ body{
     justify-content: center;
     overflow:  hidden;
 }
-.testimonials-box{
+.testimonials_box{
     position: relative;
     width: 100%;
     padding: 0 9%;
     border-radius: 50px;
     background: #9C69E2;
 }
-.testimonials-header{
+.testimonials_header{
     margin-top: 10%;
     font-weight: 500;
     font-size: 40px;
     color: #FFFFFF;
 }
-.card-container{
+.card_container{
     position: absolute;
     display: grid;
     grid-template: 100% / 60% 42% 42%;
@@ -271,36 +272,36 @@ body{
 .card__active::before{
     display: none;
 }
-.card-box{
+.card_box{
     display: flex;
     justify-content: start;
     align-items: start;
     margin: 60px 0 10.62% 0;
 }
-.card-descr{
+.card_descr{
     margin-top: 20px;
     padding-left:6%;
 }
-.user-name{
+.user_name{
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;
     color: #212353;
 }
-.user-job{
+.user_job{
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
     color: #9C69E2;
 }
-.user-comment{
+.user_comment{
     margin-top: 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 180%;
     color: #4B5D68;
 }
-.slider-dots{
+.slider_dots-arrow{
     margin-top: 478px;
     margin-bottom: 60px;
     display: flex;
@@ -308,7 +309,7 @@ body{
     align-items: center;
     height: 15px;
 }
-.box-dot{
+.box_dot{
     display: grid;
     grid-template: 10px / 10px 10px 10px;
     gap: 0px 10px;
@@ -323,14 +324,14 @@ body{
     border-radius: 5px;
     transition: 0.2s all;
 }
-.dot-active{
+.dot_active{
     width: 10px;
     height: 10px;
     background: #F063B8;
     border-radius: 10px;
     transition: 0.2s all;
 }
-.arrow-box{
+.arrow_box{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -377,7 +378,7 @@ body{
     border-radius: 2px;
     transform: rotate(45deg);
 }
-.arrow-active{
+.arrow_active{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +387,7 @@ body{
     opacity: 0.3;
     transform: rotate(180deg);
 }
-.arrow-active div {
+.arrow_active div {
     position: relative;
     top: 0;
     width: 40px;
@@ -396,19 +397,19 @@ body{
     left:0;
     display: block;
 }
-.arrow-case div{
+.arrow_case div{
     width: 20px;
     background-color: #9C69E2;
     transform: rotate(180deg);
 }
-.arrow-case div::after{
+.arrow_case div::after{
     background-color: #9C69E2;
 }
-.arrow-case div::before{
+.arrow_case div::before{
     background-color: #9C69E2;
 }
 .strip{
-    margin-top: 10%;
+    margin-top: 9%;
     width:100%;
     height: 2px;
     background: #9C69E2;
@@ -417,12 +418,12 @@ body{
 .container_footer{
     padding-bottom: 70px;
 }
-.footer-case{
+.footer_case{
     display: flex;
     justify-content: space-between;
-    margin-top: 10%;
+    margin-top: 9%;
 }
-.data-warehouse{
+.footer_box_info{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -434,7 +435,7 @@ body{
     align-items: center;
     text-decoration-line: none;
 }
-.warehouse{
+.name_company{
     margin-left: 20px;
     font-weight: 500;
     font-size: 20px;
@@ -454,27 +455,27 @@ body{
     line-height: 180%;
     color: #212353;
 }
-.number-company{
+.number_company{
     margin-top: 20px;
     font-weight: 400;
     font-size: 12px;
     line-height: 180%;
     color: #212353;
 }
-.social-media{
+.footer_box_social-media{
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     width: 190px;
 }
-.social-header{
+.social_header{
     font-weight: 500;
     font-size: 16px;
     line-height: 220%;
     color: #212353;
 }
-.social-case{
+.social_case{
     display: grid;
     grid-template: 50px / 50px 50px 50px;
     gap: 0px 20px;
@@ -482,7 +483,7 @@ body{
     justify-items: center;
     margin-top: 20px;
 }
-.social-round{
+.social_round{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -493,90 +494,90 @@ body{
     opacity: 0.1;
     cursor: pointer;
 }
-.social-round:hover{
+.social_round:hover{
     background: #000000;
     transition: 0.2s all;
 }
 @media (max-width: 1599px){
-    .concept-img{
+    .case_header__img{
         width: 79%;
     }
 }
 @media (max-width: 1424px){
-    .concept-img{
+    .case_header__img{
         width: 75%;
     }
-    .concept__header{
+    .case_header__header{
         font-size: 75px;
         margin-top: 10%;
     }
-    .concept__descr{
+    .case_header__descr{
         padding-right: 60%;
     }
-    .info-img{
+    .info_img{
         width: 40%;
     }
-    .case-info__header{
+    .case_info__header{
         font-size: 35px;
     }
-    .features-header{
+    .features_header{
         font-size: 35px;
     }
-    .features-descr{
+    .features_descr{
         max-width: 63%;
     }
-    .testimonials-header{
+    .testimonials_header{
         margin-top: 6%;
         font-size: 35px;
     }
-    .card-container{
+    .card_container{
         top: 24%;
     }
 }
 @media (max-width: 1223px){
-    .concept-img{
+    .case_header__img{
         width: 71%;
     }
-    .concept__header{
+    .case_header__header{
         font-size: 65px;
         margin-top: 8%;
     }
-    .concept__descr{
+    .case_header__descr{
         font-size: 16px;
         margin-top: 2%;
         padding-right: 56%;
     }
-    .button-link{
+    .button_link{
         margin-top: 4%;
     }
-    .case-info__header{
+    .case_info__header{
         font-size: 30px;
     }
-    .case-info__descr{
+    .case_info__descr{
         font-size: 16px;
     }
-    .features-header{
+    .features_header{
         font-size: 30px;
     }
-    .features-descr{
+    .features_descr{
         max-width: 73%;
         font-size: 16px;
     }
-    .testimonials-header{
+    .testimonials_header{
         font-size: 30px;
     }
-    .card-box{
+    .card_box{
         margin: 30px 0 9% 0;
     }
-    .card-container{
+    .card_container{
         top: 20%;
     }
-    .user-comment{
+    .user_comment{
         margin-top: 20px;
         font-size: 16px;
         line-height: 150%;
     }
-    .slider-dots{
+    .slider_dots-arrow{
         margin-top: 400px;
     }
     .features-box{
@@ -584,14 +585,14 @@ body{
     }
 }
 @media (max-width: 1024px){
-    .menu__link{
+    .menu_link{
         font-size: 18px;
     }
-    .concept__header{
+    .case_header__header{
         font-size: 55px;
         margin-top: 8%;
     }
-    .concept__descr{
+    .case_header__descr{
         font-size: 14px;
         margin-top: 2%;
     }
@@ -600,37 +601,37 @@ body{
         height: 48px;
         font-size: 16px;
     }
-    .case-info{
+    .case_info{
         padding: 0 3.5%;
     }
-    .case-info__header{
+    .case_info__header{
         font-size: 25px;
         margin: 0px;
     }
-    .case-info__descr{
+    .case_info__descr{
         margin-top: 5px;
         font-size: 14px;
     }
-    .features-header{
+    .features_header{
         font-size: 25px;
     }
-    .features-descr{
+    .features_descr{
         max-width: 83%;
         font-size: 14px;
     }
-    .case-header{
+    .case_header{
         font-size: 20px;
     }
-    .case-click div{
+    .case_link .case_link__text{
         font-size: 18px;
     }
-    .testimonials-header{
+    .testimonials_header{
         font-size: 25px;
     }
-    .user-name{
+    .user_name{
         font-size: 16px;
     }
-    .user-comment{
+    .user_comment{
         font-size: 14px;
     }
 }
@@ -641,7 +642,7 @@ body{
     .strip{
         margin-top: 5%;
     }
-    .footer-case{
+    .footer_case{
         margin-top: 5%;
     }
     .nav{
@@ -667,11 +668,11 @@ body{
     .menu_active{
         left: 0;
     }
-    .menu__link{
+    .menu_link{
         font-size: 30px;
         color: #FFFFFF;
     }
-    .menu__link:hover{
+    .menu_link:hover{
         font-size: 25px;
     }
     .hamburger{
@@ -684,7 +685,7 @@ body{
         background-color: rgba(156, 105, 226, 0.8);
         border-radius: 50px;
     }
-    .hamburger-wrap{
+    .hamburger_wrap{
         margin-top: 14px;
         margin-left: 10px;
     }
@@ -709,56 +710,56 @@ body{
     .hamburger_active span:nth-child(3){
         transform: translateY(3px) rotate(45deg);
     }
-    .concept__header{
+    .case_header__header{
         font-size: 45px;
         padding-right: 0;
         text-align: center;
     }
-    .concept__descr{
+    .case_header__descr{
         font-size: 14px;
         padding-right: 0;
         text-align: center;
     }
-    .concept-img{
+    .case_header__img{
         margin-top: 2%;
         position: static;
     }
-    .button-link{
+    .button_link{
         display: none;
     }
-    .case-concept{
+    .case_header{
         align-items: center;
     }
-    .case-info__header{
+    .case_info__header{
         font-size: 20px;
     }
-    .case-info{
+    .case_info{
         display: block;
         padding: 0;
     }
-    .box-info{
+    .box_info{
         padding: 3% 7%;
     }
-    .case-info__header{
+    .case_info__header{
         text-align: center;
     }
-    .info-img{
+    .info_img{
         display: none;
     }
     .features-box{
         grid-template: 322.2px 322.2px 322.2px 322.2px / 489.6px ;
         gap: 30px 0;
     }
-    .case img{
+    .case_features_icon{
         width: 40%;
     }
-    .case_img{
+    .case_features_img{
         padding-left: 142px; 
     }
-    .testimonials-header{
+    .testimonials_header{
         text-align: center;
     }
-    .card-container{
+    .card_container{
         position: static;
         display: flex;
         left: 0;
@@ -767,23 +768,23 @@ body{
     .card{
         display: none;
     }
-    .card-descr{
+    .card_descr{
         margin-top: 0;
     }
     .card__active{
         display: initial;
     }
-    .case-header{
+    .case_header{
         font-size: 22px;
     }
-    .case-descr{
+    .case_descr{
         font-size: 14px;
     }
-    .slider-dots{
+    .slider_dots-arrow{
         margin-top: 30px;
         justify-content: center;
     }
-    .box-dot{
+    .box_dot{
         grid-template: 15px / 15px 15px 15px;
         gap: 0px 25px;
     }
@@ -791,11 +792,11 @@ body{
         width: 10px;
         height: 10px;
     }
-    .dot-active{
+    .dot_active{
         width: 15px;
         height: 15px;
     }
-    .arrow-box{
+    .arrow_box{
         display: none;
     }
     .address{

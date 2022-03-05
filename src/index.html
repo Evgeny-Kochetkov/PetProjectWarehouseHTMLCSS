@@ -37,52 +37,41 @@
 </head>
 <body>
 
-    <section class="section section_concept">
-            <div class="container container_concept">
+    <section class="section">
+            <div class="container container_header">
                 <nav class="nav">
-                    <a href="#" class="logo">
-                        <img src="icons/logo.png" alt="logo">
+                    <a href="#" class="logo_link">
+                        <img src="icons/logo.png" alt="logo" class="logo_icon">
                     </a>
-                    <div class="menu menu_active">
-                        <div><a href="#about" class="menu__link menu__link_active">About</a></div>
-                        <div><a href="#help" class="menu__link">Help</a></div>
-                        <div><a href="#features" class="menu__link">Features</a></div>
-                    </div>
-                    <div class="hamburger hamburger_active">
-                        <div class="hamburger-wrap">
+                    <ul class="menu menu_active">
+                        <li><a href="#about" class="menu_link menu_link_active">About</a></li>
+                        <li><a href="#help" class="menu_link">Help</a></li>
+                        <li><a href="#features" class="menu_link">Features</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <div class="hamburger_wrap">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
                     </div>
                 </nav>
-                <div class="case-concept">
-                    
-                    <h1 class="concept__header">
-                        Save your data storage here.
-                    </h1>
-                    <div class="concept__descr">
-                        Data Warehouse is a data storage area that has been
-                        tested for security, so you can store your data here
-                        safely but not be afraid of being stolen by others.
-                    </div>
-                    <img src="img/img_concept.png" alt="background" class="concept-img">
-                    <a href="#features" class="button-link"><button class="button"> Learn more</button></a>
+                <div class="case_header">
+                    <h1 class="case_header__header">Save your data storage here.</h1>
+                    <div class="case_header__descr">Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.</div>
+                    <img src="img/img_concept.png" alt="background" class="case_header__img">
+                    <a href="#features" class="button_link"><button class="button">Learn more</button></a>
                 </div>
             </div>
     </section>
 
     <section class="section" id="about">
         <div class="container container_info">
-            <div class="box-info">
-                <img src="img/img_info.png" alt="info" class="info-img">
-                <div class="case-info">
-                    <h2 class="case-info__header">
-                        We are a high-level data storage bank
-                    </h2>
-                    <div class="case-info__descr">
-                        The place to store various data that you can access at any time through the internet  and where you can carry it.
-                        This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. 
+            <div class="box_info">
+                <img src="img/img_info.png" alt="info" class="info_img">
+                <div class="case_info">
+                    <h2 class="case_info__header">We are a high-level data storage bank</h2>
+                    <div class="case_info__descr">The place to store various data that you can access at any time through the internet  and where you can carry it. This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. 
                     </div>
                 </div>
             </div>
@@ -91,54 +80,50 @@
 
     <section class="section" id="features">
         <div class="container container_features">
-            <div class="features-header">
-                Features
-            </div>
-            <div class="features-descr">
-                Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
-            </div>
+            <div class="features_header">Features</div>
+            <div class="features_descr">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</div>
             <div class="features-box">
-                <div class="case">
-                    <img src="icons/features/icon_search_data.png" alt="search_data">
-                    <div class="case_img case_img__1">
-                        <div class="case-header">Search Data</div>
-                        <div class="case-descr">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</div>
-                        <a class="case-click">
-                            <div>Learn more</div>
-                            <div class="arrow arrow-case"><div></div></div>
+                <div class="case_features">
+                    <img src="icons/features/icon_search_data.png" alt="search_data" class="case_features_icon">
+                    <div class="case_features_img case_features_img__1">
+                        <div class="case_header">Search Data</div>
+                        <div class="case_descr">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</div>
+                        <a href="#" class="case_link">
+                            <div class="case_link__text">Learn more</div>
+                            <div class="arrow arrow_case"><div></div></div>
                         </a>
                     </div>
                 </div>
-                <div class="case">
-                    <img src="icons/features/icon_24_hours_access.png" alt="24_hours_access">
-                    <div class="case_img case_img__2">
-                        <div class="case-header">24 Hours Access</div>
-                        <div class="case-descr">Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.</div>
-                        <a class="case-click">
-                            <div>Learn more</div>
-                            <div class="arrow arrow-case"><div></div></div>
+                <div class="case_features">
+                    <img src="icons/features/icon_24_hours_access.png" alt="24_hours_access" class="case_features_icon">
+                    <div class="case_features_img case_features_img__2">
+                        <div class="case_header">24 Hours Access</div>
+                        <div class="case_descr">Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.</div>
+                        <a href="#" class="case_link">
+                            <div class="case_link__text">Learn more</div>
+                            <div class="arrow arrow_case"><div></div></div>
                         </a>
                     </div>
                 </div>
-                <div class="case">
-                    <img src="icons/features/icon_print_out.png" alt="print_out">
-                    <div class="case_img case_img__3">
-                        <div class="case-header">Print Out</div>
-                        <div class="case-descr">Print out service gives you convenience if someday you need print data, just edit it all and just print it.</div>
-                        <a class="case-click">
-                            <div>Learn more</div>
-                            <div class="arrow arrow-case"><div></div></div>
+                <div class="case_features">
+                    <img src="icons/features/icon_print_out.png" alt="print_out" class="case_features_icon">
+                    <div class="case_features_img case_features_img__3">
+                        <div class="case_header">Print Out</div>
+                        <div class="case_descr">Print out service gives you convenience if someday you need print data, just edit it all and just print it.</div>
+                        <a href="#" class="case_link">
+                            <div class="case_link__text">Learn more</div>
+                            <div class="arrow arrow_case"><div></div></div>
                         </a>
                     </div>
                 </div>
-                <div class="case">
-                    <img src="icons/features//icon_security_code.png" alt="security_code">
-                    <div class="case_img case_img__4">
-                        <div class="case-header">Security Code</div>
-                        <div class="case-descr">Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.</div>
-                        <a class="case-click">
-                            <div>Learn more</div>
-                            <div class="arrow arrow-case"><div></div></div>
+                <div class="case_features">
+                    <img src="icons/features//icon_security_code.png" alt="security_code" class="case_features_icon">
+                    <div class="case_features_img case_features_img__4">
+                        <div class="case_header">Security Code</div>
+                        <div class="case_descr">Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.</div>
+                        <a href="#" class="case_link">
+                            <div class="case_link__text">Learn more</div>
+                            <div class="arrow arrow_case"><div></div></div>
                         </a>
                     </div>
                 </div>
@@ -148,53 +133,53 @@
     
     <section class="section">
         <div class="container container_testimonials">
-            <div class="testimonials-box">
-                <div class="testimonials-header">Testimonials</div>
-                <div class="card-container">
+            <div class="testimonials_box">
+                <div class="testimonials_header">Testimonials</div>
+                <div class="card_container">
                     <div class="card card__1 card__active">
-                        <div class="card-box">
+                        <div class="card_box">
                             <img src="img/avatars/avatar_1.png" alt="avatar" class="avatar">
-                            <div class="card-descr">
-                                <div class="user-name">John Fang</div>
-                                <div class="user-job">wordfaang.com</div>
-                                <div class="user-comment">
+                            <div class="card_descr">
+                                <div class="user_name">John Fang</div>
+                                <div class="user_job">wordfaang.com</div>
+                                <div class="user_comment">
                                     Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card card__2">
-                        <div class="card-box">
+                        <div class="card_box">
                            <img src="img/avatars/avatar_2.png" alt="avatar" class="avatar">
-                            <div class="card-descr">
-                                <div class="user-name">Jeny Doe</div>
-                                <div class="user-job">UX Engineer</div>
-                                <div class="user-comment">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</div>
+                            <div class="card_descr">
+                                <div class="user_name">Jeny Doe</div>
+                                <div class="user_job">UX Engineer</div>
+                                <div class="user_comment">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</div>
                             </div> 
                         </div>
                     </div>
                     <div class="card card__3">
-                        <div class="card-box">
+                        <div class="card_box">
                             <img src="img/avatars/avatar_3.png" alt="avatar" class="avatar">
-                            <div class="card-descr">
-                                <div class="user-name">William</div>
-                                <div class="user-job">Web Designer</div>
-                                <div class="user-comment">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</div>
+                            <div class="card_descr">
+                                <div class="user_name">William</div>
+                                <div class="user_job">Web Designer</div>
+                                <div class="user_comment">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider-dots">
-                    <div class="box-dot">
-                        <div class="dot dot-active"></div>
+                <div class="slider_dots-arrow">
+                    <div class="box_dot">
+                        <div class="dot dot_active"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                     </div>
-                    <div class="arrow-box">
+                    <div class="arrow_box">
                         <div class="arrow">
                             <div></div>
                         </div>
-                        <div class="arrow arrow-active">
+                        <div class="arrow arrow_active">
                             <div></div>
                         </div>
                     </div>
@@ -208,11 +193,11 @@
 
     <section class="section" id="help">
         <div class="container container_footer">
-            <div class="footer-case">
-                <div class="data-warehouse">
+            <div class="footer_case">
+                <div class="footer_box_info">
                     <a href="#" class="logo logo_footer">
                         <img src="icons/logo.png" alt="logo">
-                        <div class="warehouse">DataWarehouse</div>
+                        <div class="name_company">DataWarehouse</div>
                     </a>    
                     <div class="address">
                     Warehouse Society, 234
@@ -225,30 +210,30 @@
                         <br>
                         1-232-3434 (Main)
                     </div>
-                    <div class="number-company">
+                    <div class="number_company">
                         © Datawarehouse™, 2020. All rights reserved.
                         <br>
                         Company Registration Number: 21479524.
                     </div>
                 </div>
-                <div class="social-media">
-                    <div class="social-header">
+                <div class="footer_box_social-media">
+                    <div class="social_header">
                         Social Media
                     </div>
-                    <div class="social-case">
-                        <a href="#" class="facebook-link" data-tooltip="Facebook">
-                            <div class="social-round">
-                                <img src="icons/social/facebook.svg" alt="facebook-icon">
+                    <div class="social_case">
+                        <a href="#" class="facebook_link" data-tooltip="Facebook">
+                            <div class="social_round">
+                                <img src="icons/social/facebook.svg" alt="facebook_icon">
                             </div>
                         </a>
-                        <a href="#" class="twitter-link">
-                            <div class="social-round">
-                                <img src="icons/social/twitter.svg" alt="twitter-icon">
+                        <a href="#" class="twitter_link">
+                            <div class="social_round">
+                                <img src="icons/social/twitter.svg" alt="twitter_icon">
                             </div>
                         </a>
-                        <a href="#" class="instagram-link">
-                            <div class="social-round">
-                                <img src="icons/social/instagram.svg" alt="instagram-icon">
+                        <a href="#" class="instagram_link">
+                            <div class="social_round">
+                                <img src="icons/social/instagram.svg" alt="instagram_icon">
                             </div>
                         </a>
                     </div>
@@ -256,5 +241,6 @@
             </div>
         </div>
     </section>
+    
 </body>
 </html>
