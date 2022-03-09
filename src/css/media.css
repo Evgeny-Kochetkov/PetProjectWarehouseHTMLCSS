@@ -1,3 +1,4 @@
+/* не страдартный медиа max-width: 1599px */
 @media (max-width: 1599px){
     .case_header__img{
         width: 79%;
@@ -34,6 +35,7 @@
         top: 24%;
     }
 }
+/* не страдартный медиа max-width: 1223px */
 @media (max-width: 1223px){
     .case_header__img{
         width: 71%;
@@ -85,6 +87,7 @@
         gap: 40px 0;
     }
 }
+/* лучше использовать стандартные медиа */
 @media (max-width: 1023px){
     .menu_link{
         font-size: 18px;
@@ -187,7 +190,7 @@
 		height: 50px;
         background-color: rgba(156, 105, 226, 0.8);
         border-radius: 50px;
-        z-index: 2;    
+        z-index: 2;
     }
     .hamburger_wrap{
         margin-top: 14px;
@@ -349,7 +352,7 @@
     }
     .case_features_img{
         width: 340px;
-        height: 240px; 
+        height: 240px;
     }
     .case_features_wrap{
         padding-left: 130px;
@@ -406,7 +409,7 @@
     }
     .case_features_img{
         width: 300px;
-        height: 220px; 
+        height: 220px;
     }
     .case_features_wrap{
         padding-left: 105px;
@@ -428,7 +431,7 @@
     }
     .case_features_img{
         width: 256px;
-        height: 180px; 
+        height: 180px;
     }
     .case_features_wrap{
         padding-left: 90px;

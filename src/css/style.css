@@ -1,3 +1,8 @@
+/* Не подключен normalize */
+/* нет дефолтных стилей */
+/* не указан box-sizing: border-box; */
+/* Местами не аккуратная стиль кода, стили не отформатированы - нет отстпупов после классов */
+/* Цвета не вынесены в переменные */
 html{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -6,6 +11,7 @@ body{
 }
 .section{
     max-width: 1600px;
+    /* если 0px то просто 0 без px */
     margin: 0px auto;
 }
 .container{
@@ -221,7 +227,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    color: #212353;  
+    color: #212353;
 }
 .container_testimonials{
     display: flex;
@@ -264,7 +270,7 @@ body{
     bottom: 0;
     left: 0;
     z-index:2;
-    border-radius: 20px;    
+    border-radius: 20px;
     background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%);
 }
 .card__active{
