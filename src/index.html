@@ -37,7 +37,8 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-
+<!-- нету тега main и header -->
+<!-- именование не по БЭМ -->
     <section class="section">
             <div class="container container_header">
                 <nav class="nav">
@@ -59,8 +60,10 @@
                 </nav>
                 <div class="case_header">
                     <h1 class="case_header__header">Save your data storage here.</h1>
+<!--      case_header__descr => case_header__desc              -->
                     <div class="case_header__descr">Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.</div>
                     <img src="img/img_concept.png" alt="background" class="case_header__img">
+<!--       ссылка не может содержать button, а button не может содержать ссылку. В данном случае это ссылка        -->
                     <a href="#features" class="button_link"><button class="button">Learn more</button></a>
                 </div>
             </div>
@@ -72,7 +75,7 @@
                 <img src="img/img_info.png" alt="info" class="info_img">
                 <div class="case_info">
                     <h2 class="case_info__header">We are a high-level data storage bank</h2>
-                    <div class="case_info__descr">The place to store various data that you can access at any time through the internet  and where you can carry it. This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. 
+                    <div class="case_info__descr">The place to store various data that you can access at any time through the internet  and where you can carry it. This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.
                     </div>
                 </div>
             </div>
@@ -80,9 +83,11 @@
     </section>
 
     <section class="section" id="features">
+        <!--   section должна содержать заголовок h2-h6    -->
         <div class="container container_features">
             <div class="features_header">Features</div>
             <div class="features_descr">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</div>
+<!--        features-box содержит повтор контента это список ul    -->
             <div class="features-box">
                 <div class="case_features">
                     <img src="icons/features/icon_search_data.png" alt="search_data" class="case_features_icon">
@@ -139,7 +144,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="section">
         <div class="container container_testimonials">
             <div class="testimonials_box">
@@ -164,7 +169,7 @@
                                 <div class="user_name">Jeny Doe</div>
                                 <div class="user_job">UX Engineer</div>
                                 <div class="user_comment">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor</div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="card card__3">
@@ -197,9 +202,9 @@
         </div>
 
     </section>
-
+<!-- это border у последний секции  -->
     <div class="strip"></div>
-
+<!-- это не section, а footer -->
     <section class="section" id="help">
         <div class="container container_footer">
             <div class="footer_case">
@@ -207,15 +212,20 @@
                     <a href="#" class="logo logo_footer">
                         <img src="icons/logo.png" alt="logo">
                         <div class="name_company">DataWarehouse</div>
-                    </a>    
+                    </a>
                     <div class="address">
                     Warehouse Society, 234
+                    <!--    применение <br> плохая практика, перенос стилями при помощи max-width      -->
                     <br>
-                    Bahagia Ave Street 
+                    Bahagia Ave Street
                     PRBW 29281
                     </div>
+<!--    телефон  и почта через ссылки!
+<a href="mailto:mail@mail.ru">Напишите нам</a>
+<a href="tel:+79001111111">+7-900-111-11-11</a>
+-->
                     <div class="mail">
-                        info@warehouse.project 
+                        info@warehouse.project
                         <br>
                         1-232-3434 (Main)
                     </div>
@@ -250,6 +260,6 @@
             </div>
         </div>
     </section>
-    
+
 </body>
 </html>
