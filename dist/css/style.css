@@ -82,8 +82,14 @@
         border-radius: 50px;
         font-size: 18px;
         color: var(--text-color-3);
-        transition: 0.2s all;
+        transition: 0.3s all;
     }
+
+    .concept__btn:hover,
+    .concept__btn:active {
+            background: var(--btn-active);
+            transition: 0.3s all;
+        }
 
 /* About */
 
@@ -198,6 +204,7 @@
         }
 
             .case__title {
+                font-weight: 400;
                 font-size: 24px;
                 line-height: 130%;
                 color: var(--text-color-2);
@@ -378,19 +385,19 @@
             display: grid;
             grid-template: 10px / 10px 10px 10px 10px;
             gap: 0 10px;
-            align-items: center;
-            justify-items: center;
         }
 
             .dots__btn {
-                width: 100%;
-                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transition: 0.3s all;
             }
 
             .dots__btn:hover .btn__dot,
             .dots__btn:active .btn__dot {
                 background: var(--main-color-5);
+                transition: 0.3s all;
             }
 
                 .btn__dot {
@@ -398,7 +405,7 @@
                     height: 5px;
                     background: var(--main-color-4);
                     border-radius: 5px;
-                    transition: 0.2s all;
+                    transition: 0.3s all;
                 }
                 
                 .btn__dot_active {
@@ -406,20 +413,19 @@
                     height: 10px;
                     background: var(--main-color-5);
                     border-radius: 10px;
-                    transition: 0.2s all;
+                    transition: 0.3s all;
                 }
 
         .nav__arrows {
             display: grid;
             grid-template: 20px / 40px 20px;
             gap: 0 20px;
-            align-items: center;
-            justify-items: center;
         }
 
             .arrows__btn {
-                width: 100%;
-                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transition: 0.3s all;
             }
 
@@ -526,6 +532,13 @@
             width: 50px;
             height: 50px;
             border-radius: 50px;
-            background: #4e4e4e;
+            background: var(--text-color-2); 
             opacity: 0.1;
+            transition: 0.3s all;
+        }
+
+        .social__link:hover,
+        .social__link:active {
+            opacity: 0.3;
+            transition: 0.3s all;
         }
