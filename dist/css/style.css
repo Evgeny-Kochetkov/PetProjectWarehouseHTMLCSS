@@ -191,16 +191,16 @@
         }
 
         .grid__case_1 {
-            background: url('../img/case_1.png') center right/83% no-repeat;
+            background: url('../img/cases/case_1.png') center right/83% no-repeat;
         }
         .grid__case_2 {
-            background: url('../img/case_2.png') center right/83% no-repeat;
+            background: url('../img/cases/case_2.png') center right/83% no-repeat;
         }
         .grid__case_3 {
-            background: url('../img/case_3.png') center right/83% no-repeat;
+            background: url('../img/cases/case_3.png') center right/83% no-repeat;
         }
         .grid__case_4 {
-            background: url('../img/case_4.png') center right/83% no-repeat;
+            background: url('../img/cases/case_4.png') center right/83% no-repeat;
         }
 
             .case__title {
@@ -354,6 +354,7 @@
         }
 
             .user__name {
+                display: block;
                 margin-top: 80px;
                 font-weight: 500;
                 font-size: 18px;
@@ -513,7 +514,7 @@
     .footer__social {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
-        gap: 30px 14px;
+        gap: 20px 14px;
         align-items: center;
         justify-items: start;
     }
