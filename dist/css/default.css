@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    list-style-type: none;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 1600px;
+    min-width: 320px;
+    margin: 0 auto;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    padding: 0;
+	border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+a {
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-content {
+    padding: 0 15%;
+}
+
+.main-content_hidden {
+    overflow:  hidden;
+}
+
+.strip {
+    margin-top: 10%;
+    border-top: 2px solid var(--strip-coolor);
+}

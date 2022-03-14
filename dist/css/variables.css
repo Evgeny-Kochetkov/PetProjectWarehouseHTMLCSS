@@ -1,0 +1,12 @@
+:root {
+    --text-color-1: rgb(75, 93, 104);
+    --text-color-2: rgb(33, 35, 83);
+    --text-color-3: rgb(255, 255, 255);
+    --text-color-4: rgb(156, 105, 226);
+    --main-color-1: rgb(156, 105, 226);
+    --main-color-2: rgba(240, 99, 184, 0.15);
+    --main-color-3: rgb(104, 201, 186);
+    --main-color-4: rgb(255, 255, 255);
+    --main-color-5: rgb(240, 99, 184);
+    --strip-coolor: rgba(156, 105, 226, 0.2);
+}
