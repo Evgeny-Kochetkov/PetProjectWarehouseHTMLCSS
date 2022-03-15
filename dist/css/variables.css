@@ -10,4 +10,8 @@
     --main-color-5: rgb(240, 99, 184);
     --strip-coolor: rgba(156, 105, 226, 0.2);
     --btn-active: rgb(143, 94, 212);
+    --hamburger-color: rgba(156, 105, 226, 0.8);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color-active: rgba(0, 0, 0, 0.2);
+    --transparent: rgba(255, 255, 255, 0);
 }

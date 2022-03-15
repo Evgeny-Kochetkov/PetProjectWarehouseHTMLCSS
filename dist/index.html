@@ -44,12 +44,15 @@
     <!-- Header -->
     <header id="header">
         <div class="main-content">
-            <div class="header__container">
+            <div class="header">
                 <a href="#" class="header__logo">
                     <img src="icons/logo.png" alt="logo">
+                    <span class="logo__title hidden"> <!-- hidden -->
+                        DataWarehouse
+                    </span>
                 </a>
-                <nav class="header__nav">
-                    <a href="#about" class="nav__link nav__link_active">
+                <nav class="header__nav header__nav_active"> <!-- header__nav_active -->
+                    <a href="#about" class="nav__link nav__link_active"> <!-- nav__link_active -->
                         About
                     </a>
                     <a href="#footer" class="nav__link">
@@ -59,10 +62,10 @@
                         Features
                     </a>
                 </nav>
-                <div class="header__hamburger header__hamburger_active">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="header__hamburger header__hamburger_active"> <!-- header__hamburger_active -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -133,7 +136,7 @@
                                 <div class="link__btn">
                                     <span class="btn__arrow">  
                                     </span>
-                                    <span class="hidden">
+                                    <span class="hidden"> <!-- hidden -->
                                         Arrow
                                     </span>
                                 </div>
@@ -155,7 +158,7 @@
                                 <div class="link__btn">
                                     <span class="btn__arrow">  
                                     </span>
-                                    <span class="hidden">
+                                    <span class="hidden"> <!-- hidden -->
                                         Arrow
                                     </span>
                                 </div>
@@ -176,7 +179,7 @@
                                 <div class="link__btn">
                                     <span class="btn__arrow">  
                                     </span>
-                                    <span class="hidden">
+                                    <span class="hidden"> <!-- hidden -->
                                         Arrow
                                     </span>
                                 </div>
@@ -199,7 +202,7 @@
                                 <div class="link__btn">
                                     <span class="btn__arrow">
                                     </span>
-                                    <span class="hidden">
+                                    <span class="hidden"> <!-- hidden -->
                                         Arrow
                                     </span>
                                 </div>
@@ -216,7 +219,7 @@
                         Testimonials
                     </h3>
                     <ul class="testimonials__grid">
-                        <li class="grid__user grid__user_1 grid__user_active">
+                        <li class="grid__user grid__user_1 grid__user_active"> <!-- grid__user_active -->
                             <span class="user__name">
                                 John Fang
                             </span>
@@ -258,42 +261,42 @@
                     <div class="testimonials__nav">
                         <div class="nav__dots">
                             <button class="dots__btn">
-                                <span class="btn__dot btn__dot_active"></span>
-                                <span class="hidden">
+                                <span class="btn__dot btn__dot_active"></span> <!-- btn__dot_active -->
+                                <span class="hidden"> <!-- hidden -->
                                     Dot
                                 </span>
                             </button>
                             <button class="dots__btn">
                                 <span class="btn__dot"></span>
-                                <span class="hidden">
+                                <span class="hidden"> <!-- hidden -->
                                     Dot
                                 </span>
                             </button>
                             <button class="dots__btn">
                                 <span class="btn__dot"></span>
-                                <span class="hidden">
+                                <span class="hidden"> <!-- hidden -->
                                     Dot
                                 </span>
                             </button>
                             <button class="dots__btn">
                                 <span class="btn__dot"></span>
-                                <span class="hidden">
+                                <span class="hidden"> <!-- hidden -->
                                     Dot
                                 </span>
                             </button>
                         </div>
                         <div class="nav__arrows">
                             <button class="arrows__btn">
-                                <span class="btn__arrow btn__arrow_white btn__arrow_active">
+                                <span class="btn__arrow btn__arrow_white btn__arrow_active"> <!-- btn__arrow_active -->
                                 </span>
-                                <span class="hidden">
+                                <span class="hidden"> <!-- hidden -->
                                     Arrow left
                                 </span>
                             </button>
                             <button class="arrows__btn">
                                 <span class="btn__arrow btn__arrow_white">  
                                 </span>
-                                <span class="hidden">
+                                <span class="hidden"> <!-- hidden -->
                                     Arrow right
                                 </span> 
                             </button>
@@ -309,9 +312,9 @@
                 <div class="footer__contacts">
                     <a href="#" class="contacts__logo">
                         <img src="icons/logo.png" alt="logo">
-                        <h4 class="logo__title">
+                        <span class="logo__title">
                             DataWarehouse
-                        </h4>
+                        </span>
                     </a>
                     <address class="contacts__address">
                         <p>
@@ -333,9 +336,9 @@
                     </span>
                 </div>
                 <div class="footer__social">
-                    <h4 class="social__title">
+                    <span class="social__title">
                         Social Media
-                    </h4>
+                    </span>
                     <a href="#" class="social__link" data-tooltip="Facebook">
                         <img src="icons/social/facebook.svg" alt="facebook_icon">
                     </a>
